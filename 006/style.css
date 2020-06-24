@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Sriracha", cursive;
+}
+body {
+  height: 100%;
+}
+.content {
+  height: 1000px;
+}
+
+.main-footer .container {
+  display: flex;
+  width: 1200;
+  margin: auto;
+}
+
+.container {
+  width: 80%;
+}
+
+.main-footer {
+  padding: 100px 0 0 0;
+  background: linear-gradient(
+    to right top,
+    #051937,
+    #003f63,
+    #006987,
+    #00949d,
+    #00c0a3
+  );
+}
+
+.footer-item {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.footer-item nav {
+  display: flex;
+  flex-flow: column;
+}
+
+.footer-item h4 {
+  font-size: 24px;
+  color: aliceblue;
+  border-bottom: 1px dotted #ffffff;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer-item nav a {
+  color: aliceblue;
+  line-height: 1.5;
+  text-decoration: none;
+  padding: 5px 0;
+}
+.footer-item nav a:hover {
+  color: aquamarine;
+  font-size: 20px;
+}
+
+.footer-subs {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subs form {
+  display: flex;
+  width: 100%;
+  margin: auto 0px;
+}
+
+.footer-subs input[type="text"],
+.footer-subs input[type="submit"] {
+  border: none;
+  padding: 5px 10px;
+}
+
+.footer-subs input[type="text"] {
+  width: 0;
+  flex-grow: 1;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.footer-subs input[type="text"]:focus {
+  outline: none;
+  border: 3px solid #00c0a3;
+}
+
+.footer-subs input[type="submit"] {
+  color: aliceblue;
+  background-color: #051937;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer-subs input[type="submit"]:focus {
+  outline: none;
+  border: 3px solid #00c0a3;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0 0 0;
+  padding: 50px 0px;
+  color: aliceblue;
+}
