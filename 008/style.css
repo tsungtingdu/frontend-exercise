@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Sriracha", cursive;
+}
+
+body {
+  background-color: #ccc;
+}
+.main-header {
+  background: linear-gradient(
+    to right,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #9299e1,
+    #8998e1,
+    #7f97e1,
+    #7d8adb,
+    #7e7cd4,
+    #806ecc,
+    #845ec2
+  );
+}
+.main-header .container {
+  display: flex;
+  /* flex-flow: column; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  height: 75px;
+}
+
+.main-header .logo {
+  width: 75px;
+  position: absolute;
+}
+.main-header .logo img {
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 100%;
+}
+.main-header .main-nav {
+  /* margin: auto; */
+  display: flex; /* make elements as flex items but not inline items*/
+}
+
+.main-header .main-nav a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 5px 1rem;
+  position: relative;
+  transform: translateY(0px);
+  transition: 0.3s;
+}
+
+.main-header .main-nav a:nth-child(3) {
+  margin-left: 140px;
+}
+
+.main-header .main-nav a:hover {
+  transform: translateY(-10px);
+}
+
+.main-header .main-nav a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -3px;
+  height: 0px;
+  border-bottom: 2px solid white;
+  transition: 0.3s 0.1s;
+}
+
+.main-header .main-nav a:hover:after {
+  left: -5%;
+  right: -5%;
+}
+
+.main-header .header-search {
+  background-color: transparent;
+  padding: 10px;
+}
+.main-header .header-search button {
+  border: none;
+  width: 30px;
+  padding: 5px;
+  text-align: center;
+  background-color: aliceblue;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.main-header .header-search input {
+  border: none;
+  padding: 5px 10px;
+  background-color: aliceblue;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.main-header .header-search button:focus {
+  outline: none;
+  border: 2px solid #845ec2;
+}
+.main-header .header-search input:focus {
+  outline: none;
+  border: 2px solid #845ec2;
+}
