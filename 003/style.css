@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Sriracha", cursive;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-color: #ffffeb;
+}
+.wrapper {
+  width: 1200px;
+  display: flex;
+  margin: auto;
+}
+
+.item {
+  width: 368px;
+  margin: 15px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  transform: translateY(0px);
+  transition: 0.05s 0.05s;
+}
+
+.item .text {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.item .text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 184px solid #fff;
+  border-right: 184px solid #fff;
+  transform: translateY(-100%);
+}
+
+.item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.item h2 {
+  border-bottom: 1px solid #888;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.4rem;
+  transition: 0.3s 0.1s;
+}
+
+.item p {
+  line-height: 1.5;
+}
+
+.item:hover {
+  transform: translateY(-50px);
+  border: none;
+}
+
+.item:hover .text {
+  background-image: linear-gradient(0deg, #fff, #ff6600);
+}
+
+.item:hover .text::before {
+  border-left: 184px solid #ff6600;
+  border-right: 184px solid #ff6600;
+}
+
+.item:hover .text h2 {
+  color: #ffeadb;
+}
