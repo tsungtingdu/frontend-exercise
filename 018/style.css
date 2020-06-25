@@ -1,0 +1,108 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap"); */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Architects Daughter", cursive;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1506105524407-94b39b1e7415?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80")
+    no-repeat center center/cover;
+}
+
+.container {
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 10px whitesmoke;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.user .avatar {
+  width: 60px;
+  display: flex;
+  flex-flow: column;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.user .pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user .pic i {
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.user .msg {
+  padding: 16px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.remote .msg {
+  margin-left: 20px;
+  margin-right: 80px;
+  background-color: rgba(223, 224, 223, 0.6);
+}
+
+.local {
+  justify-content: flex-end;
+}
+
+.local .msg {
+  margin-left: 80px;
+  margin-right: 20px;
+  background-color: rgba(255, 237, 203, 0.6);
+  order: -1;
+}
+
+.remote .msg::before,
+.local .msg::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.remote .msg::before {
+  border-right: 10px solid rgba(223, 224, 223, 0.6);
+  left: -10px;
+}
+
+.local .msg::before {
+  border-left: 10px solid rgba(255, 237, 203, 0.6);
+  right: -10px;
+}
+
+.name {
+  color: aliceblue;
+}
