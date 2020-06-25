@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Sriracha", cursive;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f4e1df;
+}
+
+.side-container {
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+  height: 100%;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right top,
+    #a66965,
+    rgb(182, 112, 104),
+    #c5766b,
+    #d57e6d,
+    #e4856e,
+    #ec8f78,
+    #f49983,
+    #fca38d,
+    #fdb2a3,
+    #fbc2b8,
+    #f9d1cc,
+    #f4e1df
+  );
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+
+.side-container label {
+  position: absolute;
+  font-size: 30px;
+  width: 30px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: rgba(182, 112, 104, 0.2);
+  color: rgba(182, 112, 104, 0.6);
+  top: 50%;
+  left: 300px;
+  bottom: 50%;
+  border: 1px solid rgba(182, 112, 104, 0.2);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#side-container-switch {
+  display: none;
+}
+
+#side-container-switch:checked + .side-container {
+  transform: translateX(0);
+  box-shadow: 10px 0px 10px rgba(216, 155, 137, 0.7);
+}
+
+#side-container-switch:checked + .side-container label .fas {
+  transform: scaleX(-1);
+}
+
+.sidemenu {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.sidemenu form {
+  display: flex;
+  margin: 0 10px 50px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sidemenu form input {
+  font-size: 16px;
+  border: none;
+  padding: 5px 10px 5px 20px;
+  width: 230px;
+  background-color: transparent;
+}
+
+.sidemenu form input:focus {
+  outline: none;
+}
+
+.sidemenu form button {
+  border: none;
+  padding: 5px 10px;
+  width: 50px;
+  background-color: transparent;
+}
+
+.sidemenu form button:focus {
+  outline: none;
+}
+
+nav {
+  display: flex;
+  flex-flow: column;
+}
+
+nav a i {
+  margin-right: 10px;
+}
+
+nav a {
+  font-size: 16px;
+  padding: 10px 10px 10px 30px;
+  color: #400000;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a + a::before {
+  content: "";
+  position: absolute;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  left: 10px;
+  right: 10px;
+  top: 0px;
+}
+
+nav a .fas {
+  margin-right: -1.1rem;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+nav a:hover .fas {
+  margin-right: 10px;
+  transform: scale(1);
+}
+
+.nav-footer {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+}
