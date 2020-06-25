@@ -1,0 +1,97 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Sriracha", cursive;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://i.imgur.com/2mnrp13.jpg") no-repeat center center /
+    cover;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 60px #000;
+  backdrop-filter: blur(0.5px);
+}
+
+form {
+  width: 400px;
+  color: #ffffff;
+}
+
+form h2 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+}
+
+form .group {
+  margin-bottom: 20px;
+}
+form label {
+  line-height: 2;
+}
+form input {
+  width: 100%;
+  border: 1px solid #aaa;
+  line-height: 3;
+  border-radius: 5px;
+}
+form .btn-group {
+  width: 100%;
+  font-size: 0;
+  display: flex;
+  justify-content: space-around;
+  flex: 1 0 auto;
+}
+form .btn {
+  font-size: 20;
+  border-radius: 5px;
+  border: none;
+  background-color: #d9f3ff;
+  padding: 5px 0;
+  width: 50%;
+}
+
+form .btn + .btn {
+  margin-left: 2%;
+}
+
+form .btn:hover {
+  background: linear-gradient(
+    to right top,
+    #3d4856,
+    #46515f,
+    #4f5a68,
+    #586372,
+    #616c7b,
+    #6d7989,
+    #798797,
+    #8695a5,
+    #9aacbb,
+    #aec3d2,
+    #c3dbe8,
+    #d8f3ff
+  );
+  color: #d9f3ff;
+}
