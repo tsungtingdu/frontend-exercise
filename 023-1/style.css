@@ -1,0 +1,57 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Architects Daughter", cursive;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+.container h1 {
+  width: 400px;
+  padding: 15px;
+  color: #333;
+  background-color: #eee;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.container .text {
+  column-count: 2;
+  column-gap: 440px;
+}
+
+.container p {
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+}

@@ -113,3 +113,15 @@ You can find more about me here:
 [022-3](https://github.com/tsungtingdu/frontend-exercise/tree/master/022-3) - Paragraph
 
 ![Imgur](https://i.imgur.com/ncObVEa.png)
+
+[023-1](https://github.com/tsungtingdu/frontend-exercise/tree/master/023-1) - Paragraph
+
+![Imgur](https://i.imgur.com/KvWWaAZ.png)
+
+[023-2](https://github.com/tsungtingdu/frontend-exercise/tree/master/023-2) - Paragraph
+
+![Imgur](https://i.imgur.com/bHNIU1B.png)
+
+[023-3](https://github.com/tsungtingdu/frontend-exercise/tree/master/023-3) - Paragraph
+
+![Imgur](https://i.imgur.com/EecMWWv.png)
