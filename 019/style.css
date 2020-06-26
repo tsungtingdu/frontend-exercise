@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Architects Daughter", cursive;
+}
+
+body {
+  height: 100%;
+  background: linear-gradient(
+      to right top,
+      #e4660d,
+      #eb8135,
+      #f09b58,
+      #f6b37a,
+      #faca9f,
+      #f1d1a6,
+      #e9d7ae,
+      #e3dcb9,
+      #c8d4ac,
+      #aacca6,
+      #88c4a6,
+      #63baab
+    )
+    no-repeat center center / cover;
+}
+
+.container {
+  width: 1200px;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 300px;
+  clear: both;
+}
+
+.timeline {
+  padding: 100px 0 200px 0;
+}
+
+.timeline li {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px 0;
+  position: relative;
+}
+
+.timeline li:nth-child(odd) {
+  float: left;
+  padding-right: 100px;
+}
+
+.timeline li:nth-child(even) {
+  float: right;
+  padding-left: 100px;
+  transform: translateY(50%);
+}
+
+.timeline li::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #54433a;
+}
+
+.timeline li:nth-child(even)::after {
+  left: -1px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e4660d;
+  z-index: 2;
+}
+
+.timeline li:nth-child(odd)::before {
+  right: -10px;
+}
+
+.timeline li:nth-child(even)::before {
+  left: -10px;
+}
+
+.timeline a {
+  display: block;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid #54433a;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #54433a;
+  backdrop-filter: blur(1px);
+}
+
+/* .timeline a:hover {
+  background-color: yellowgreen;
+} */
+
+.timeline h2 {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.timeline p {
+  color: #666;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.timeline h2::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  background-color: #54433a;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.timeline li:nth-child(odd) h2::after {
+  right: -101px;
+}
+.timeline li:nth-child(even) h2::after {
+  left: -101px;
+}
+
+.timeline img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0px 0px 5px #333;
+  border-radius: 5px;
+}
