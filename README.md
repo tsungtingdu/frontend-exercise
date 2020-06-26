@@ -97,3 +97,7 @@ You can find more about me here:
 [020](https://github.com/tsungtingdu/frontend-exercise/tree/master/020) - Rotate
 
 ![Imgur](https://i.imgur.com/GFw7Qdh.png)
+
+[021](https://github.com/tsungtingdu/frontend-exercise/tree/master/021) - Cloud
+
+![Imgur](https://i.imgur.com/kgnadgo.png)
