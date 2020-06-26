@@ -101,3 +101,15 @@ You can find more about me here:
 [021](https://github.com/tsungtingdu/frontend-exercise/tree/master/021) - Cloud
 
 ![Imgur](https://i.imgur.com/kgnadgo.png)
+
+[022-1](https://github.com/tsungtingdu/frontend-exercise/tree/master/022-1) - Paragraph
+
+![Imgur](https://i.imgur.com/SC7bBMl.png)
+
+[022-2](https://github.com/tsungtingdu/frontend-exercise/tree/master/022-2) - Paragraph
+
+![Imgur](https://i.imgur.com/4MUg1NW.png)
+
+[022-3](https://github.com/tsungtingdu/frontend-exercise/tree/master/022-3) - Paragraph
+
+![Imgur](https://i.imgur.com/ncObVEa.png)

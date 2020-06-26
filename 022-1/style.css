@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Architects Daughter", cursive;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.container h1 {
+  font-size: 25px;
+  width: 400px;
+  text-align: right;
+  padding: 15px;
+  background-color: #ddd;
+}
+
+.container h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 5rem;
+  background-color: #333;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.container .text {
+  width: 800px;
+  padding: 0 15px;
+  column-count: 2;
+  column-gap: 30px;
+}
