@@ -149,3 +149,7 @@ You can find more about me here:
 [025-3](https://github.com/tsungtingdu/frontend-exercise/tree/master/025-3) - Paragraph
 
 ![Imgur](https://i.imgur.com/l3TkjI2.png)
+
+[026 - [React] simple counter](https://github.com/tsungtingdu/frontend-exercise/tree/master/026-react-counter)
+
+![Imgur](https://i.imgur.com/ZNQd0rZ.png)
