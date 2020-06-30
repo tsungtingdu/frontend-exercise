@@ -153,3 +153,7 @@ You can find more about me here:
 [026 - [React] simple counter](https://github.com/tsungtingdu/frontend-exercise/tree/master/026-react-counter)
 
 ![Imgur](https://i.imgur.com/ZNQd0rZ.png)
+
+[027 - [React] network speed converter](https://github.com/tsungtingdu/frontend-exercise/tree/master/027-react-speed-converter)
+
+![Imgur](https://i.imgur.com/kPzYXzO.png)
