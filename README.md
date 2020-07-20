@@ -158,7 +158,7 @@ You can find more about me here:
 
 ![Imgur](https://i.imgur.com/kPzYXzO.png)
 
-[029 - Intergrated](https://github.com/tsungtingdu/frontend-exercise/tree/master/029)
+[029 - Integrated](https://github.com/tsungtingdu/frontend-exercise/tree/master/029)
 
 ![Imgur](https://i.imgur.com/JSzkzuk.png)
 
