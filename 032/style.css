@@ -48,6 +48,10 @@ a {
 /* import font */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional"); 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f6f7f8;
   font-family: "Noto Sans TC", sans-serif; 
@@ -242,6 +246,7 @@ header {
   border-radius: 2%;
   position: relative;
 }
+
 .card::before,
 .card::after {
   content: "";
@@ -313,6 +318,60 @@ header {
   font-size: 1rem;
 }
 
+/* adoption */
+.adoption-wrapper {
+  display: grid;
+  margin: 92px auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 180px;
+  width: 90%;
+  background: #fff;
+  -webkit-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.adoption-image {
+  width: 100%;
+}
+
+.adoption-info {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: 1.2rem;
+  margin: 50px 0;
+}
+
+.adoption-info .title {
+  font-size: 1.75rem;
+  margin-bottom: 0.4rem;
+  color: #267c99;
+}
+.adoption-info .description {
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+  color: #5e5c5c;
+}
+
+.adoption-info .action {
+  width: 50%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  background: #4a4a4a;
+  padding: 1rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
 @media screen and (min-width: 768px) {
 
   /* navbar */
@@ -361,16 +420,32 @@ header {
     align-items: flex-start;
     justify-content: center;
   }
+
   .main-banner .banner-title {
     font-size: 4rem;
   }
+
   .main-banner .banner-description {
     font-size: 2rem;
   }
+
   .sub-banner .banner-title {
     font-size: 2rem;
   }
+
   .sub-banner .action {
     font-size: 1.2rem;
+  }
+
+  /*Adoption*/
+  .adoption-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+  }
+
+  .adoption-image {
+    width: 100%;
+    margin: auto 0;
   }
 }
