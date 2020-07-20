@@ -157,3 +157,13 @@ You can find more about me here:
 [027 - [React] network speed converter](https://github.com/tsungtingdu/frontend-exercise/tree/master/027-react-speed-converter)
 
 ![Imgur](https://i.imgur.com/kPzYXzO.png)
+
+[029 - Intergrated](https://github.com/tsungtingdu/frontend-exercise/tree/master/029)
+
+![Imgur](https://i.imgur.com/JSzkzuk.png)
+
+[030 - [React] Weather App (WIP)](https://github.com/tsungtingdu/frontend-exercise/tree/master/030-react-weather-app)
+
+[032 - RWD & Grid exercise](https://github.com/tsungtingdu/frontend-exercise/tree/master/032)
+
+![Imgur](https://i.imgur.com/aFZEOGz.jpg)
