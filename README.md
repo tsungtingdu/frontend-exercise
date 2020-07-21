@@ -167,3 +167,7 @@ You can find more about me here:
 [032 - RWD & Grid exercise](https://github.com/tsungtingdu/frontend-exercise/tree/master/032)
 
 ![Imgur](https://i.imgur.com/aFZEOGz.jpg)
+
+[033 - sass exercise](https://github.com/tsungtingdu/frontend-exercise/tree/master/033)
+
+![Imgur](https://i.imgur.com/5mL6EJs.png)
