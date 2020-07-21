@@ -94,18 +94,28 @@ $sizes: (25: 25%,
   75: 75%,
   100: 100%);
 
-/* 使用@each 產出css size設定 */
+@each $prop,
+$abbrev in (width: w, height: h) {
+
+  @each $num,
+  $val in $sizes {
+    .#{$abbrev}-#{$num} {
+      #{$prop}: $val;
+    }
+  }
+}
 
 $spacer: 1rem;
 $spacers: (0: 0,
-  1: ($spacer * 0.25),
-  2: ($spacer * 0.5),
-  3: ($spacer * 0.75),
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: ($spacer * .75),
   4: $spacer,
   5: ($spacer * 1.25),
   6: ($spacer * 1.5),
   7: ($spacer * 1.75),
-  8: ($spacer * 2));
+  8: ($spacer * 2),
+);
 
 @each $prop,
 $abbrev in (margin: m, padding: p) {
@@ -117,29 +127,29 @@ $abbrev in (margin: m, padding: p) {
     }
 
     .#{$abbrev}t-#{$num} {
-      #{$prop}-top: $val;
+      #{$prop}-top: $val
     }
 
     .#{$abbrev}r-#{$num} {
-      #{$prop}-right: $val;
+      #{$prop}-right: $val
     }
 
     .#{$abbrev}b-#{$num} {
-      #{$prop}-bottom: $val;
+      #{$prop}-bottom: $val
     }
 
     .#{$abbrev}l-#{$num} {
-      #{$prop}-left: $val;
+      #{$prop}-left: $val
     }
 
     .#{$abbrev}x-#{$num} {
       #{$prop}-left: $val;
-      #{$prop}-right: $val;
+      #{$prop}-right: $val
     }
 
     .#{$abbrev}y-#{$num} {
       #{$prop}-top: $val;
-      #{$prop}-bottom: $val;
+      #{$prop}-bottom: $val
     }
   }
 }
@@ -158,6 +168,18 @@ $abbrev in (margin: m, padding: p) {
 
 %standard-boxshadow {
   box-shadow: 3px 0 13px 0 rgba(100, 112, 134, 0.1);
+}
+
+%input-style {
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0.5em;
+
+  &:hover,
+  &:focus {
+    border-color: $dark-gray;
+  }
 }
 
 html {
@@ -271,7 +293,7 @@ body {
 
 /* style start */
 
-.main-app {
+#main-app {
   height: 100%;
 }
 
@@ -365,14 +387,21 @@ nav {
 
 .right-content {
   flex: 1;
+  display: flex;
+  flex-flow: column;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .stepper-panel {
   height: 120px;
 
   .stepper-container {
-    width: 80%;
-    margin: 0 auto;
+    // width: 80%;
+    // margin: 0 auto;
     display: flex;
     padding-top: 40px;
   }
@@ -423,5 +452,175 @@ nav {
       right: calc(50% + 20px);
       left: calc(-50% + 20px);
     }
+  }
+}
+
+.form-panel {
+  @extend %standard-boxshadow;
+  background-color: $white;
+  padding: 32px 0;
+  overflow-y: scroll;
+  flex: 1;
+
+  .form-container {
+    height: 100%;
+
+    form {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+
+      .form-content {
+        flex: 1;
+      }
+    }
+  }
+
+  .terms-panel {
+    padding: 16px;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+}
+
+form {
+  .form-row {
+    margin-bottom: 24px;
+
+    >label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+  }
+
+  input {
+    @extend %input-style;
+
+    &[type="checkbox"],
+    &[type="radio"] {
+      -webkit-appearance: none;
+      cursor: pointer;
+
+      ~label {
+        display: inline-block;
+        font-weight: normal;
+        margin: 0;
+      }
+    }
+
+    &[type="checkbox"] {
+      border-radius: 3px;
+      position: relative;
+
+      &:checked {
+        background-color: $secondary-blue;
+
+        &::after {
+          content: '\2714';
+          color: $white;
+          font-size: 12px;
+          position: absolute;
+          top: 1px;
+          left: 3px;
+        }
+      }
+
+      &:focus {
+        border-color: $light-gray;
+      }
+
+      &:hover {
+        border-color: $dark-gray;
+      }
+    }
+
+    &[type="radio"] {
+      border-radius: 50%;
+
+      &:checked {
+        box-shadow: inset 0 0 0 5px $secondary-blue;
+      }
+
+      ~label {
+        margin-right: 20px;
+      }
+    }
+
+    &[type="date"] {
+      cursor: pointer;
+
+      &:invalid {
+        color: #747474;
+      }
+    }
+
+    &[type="number"] {
+      width: 60px;
+    }
+  }
+
+  .select-wrapper {
+    position: relative;
+    width: 185px;
+    z-index: 0;
+
+    &::after {
+      // content: "\25BE";
+      content: "";
+      border-style: solid;
+      border-width: 6px 5px 0 5px;
+      border-color: $light-gray transparent transparent transparent;
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  }
+
+  select {
+    @extend %input-style;
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+
+    &:invalid {
+      color: #747477;
+    }
+  }
+}
+
+textarea {
+  @extend %input-style;
+  resize: none;
+  overflow-y: scroll;
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 5px;
+  height: 32px;
+  padding: 0 16px;
+  box-shadow: 1px 1px 5px #a6a6a6;
+
+  &.btn-primary {
+    background-color: $secondary-blue;
+    color: $white;
+  }
+
+  &.btn-outline {
+    color: $dark-gray;
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 5px $dark-gray;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
   }
 }
