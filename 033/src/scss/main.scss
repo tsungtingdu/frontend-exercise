@@ -107,6 +107,16 @@ $spacers: (0: 0,
   7: ($spacer * 1.75),
   8: ($spacer * 2));
 
+/* mixin */
+
+@mixin getStepnums($num) {
+  @for $i from 1 through $num {
+    &:nth-child(#{$i}) .circle-container::after {
+      content: "#{$i}";
+    }
+  }
+}
+
 /* 使用@each 產出css spacer設定 */
 
 %standard-boxshadow {
@@ -318,4 +328,63 @@ nav {
 
 .right-content {
   flex: 1;
+}
+
+.stepper-panel {
+  height: 120px;
+
+  .stepper-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 40px;
+  }
+
+  .step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    @include getStepnums(3);
+
+    .circle-container {
+      height: 24px;
+      width: 24px;
+      background-color: $light-gray;
+      border-radius: 50%;
+      color: $dark-gray;
+      margin: 0 auto;
+    }
+
+    .label-container {
+      margin-top: 10px;
+      color: $light-gray;
+    }
+
+    &.checked .circle-container::after {
+      content: "\2714";
+    }
+
+    &.checked,
+    &.active {
+      .circle-container {
+        background-color: $freedom-blue;
+        color: $body-color;
+      }
+
+      .label-container {
+        color: $body-color;
+      }
+    }
+
+    .connect-line {
+      display: block;
+      height: 1px;
+      background-color: $light-gray;
+      position: absolute;
+      // width: 100%;
+      top: 12px;
+      right: calc(50% + 20px);
+      left: calc(-50% + 20px);
+    }
+  }
 }
