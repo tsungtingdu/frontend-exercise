@@ -70,3 +70,15 @@ const darkModeToggleHandler = event => {
 };
 // bind the event
 darkModeToggle.addEventListener("change", darkModeToggleHandler);
+
+// check all
+const mainCheckbox = document.querySelector('#main-checkbox')
+const dataCheckboxs = document.querySelectorAll('tr td input[type="checkbox"]')
+
+mainCheckbox.addEventListener('change', e => {
+  if (event.target.checked) {
+    dataCheckboxs.forEach(i => { i.checked = true })
+  } else {
+    dataCheckboxs.forEach(i => { i.checked = false })
+  }
+})
