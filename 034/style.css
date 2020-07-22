@@ -97,7 +97,6 @@ body {
   flex: 1;
   padding: 42px 50px 68px 50px;
   max-height: 100vh;
-  overflow-y: auto;
 }
 
 .main__title {
@@ -105,14 +104,29 @@ body {
   font-size: 48px;
 }
 
+.table__container {
+  height: 95%;
+  overflow-y: auto;
+}
+
 .main__table {
   background-color: var(--table-background-color);
+
 }
 
 .table__header {
   background: var(--header-color);
   color: var(--header-text-color);
+
 }
+
+.table__header th {
+  position: sticky;
+  top: 0;
+  background: var(--header-color);
+  z-index: 100;
+}
+
 
 .table__row {
   height: 50px;
@@ -125,7 +139,6 @@ body {
 
 .table__body .table__row:hover {
   background: #ff6500;
-
 }
 
 .table__cell {
