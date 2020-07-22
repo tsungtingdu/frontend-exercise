@@ -61,48 +61,7 @@
           <th class="table__cell table__cell--action">Action</th>
         </tr>
       </thead>
-      <tbody class="table__body">
-        <tr class="table__row">
-          <td class="table__cell table__cell--checkbox">
-            <input type="checkbox" />
-          </td>
-          <td class="table__cell table__cell--id">1</td>
-          <td class="table__cell table__cell--name">td</td>
-          <td class="table__cell table__cell--advertiser">
-            <span class="cell__advertiser__line">Advertiser</span>
-            <span class="cell__advertiser__line cell__advertiser__line--group">Group</span>
-          </td>
-          <td class="table__cell table__cell--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            eget.</td>
-          <td class="table__cell table__cell--price">1999</td>
-          <td class="table__cell table__cell--starttime">2020 / 07 / 22</td>
-          <td class="table__cell table__cell--endtime">2020 / 08 / 22</td>
-          <td class="table__cell table__cell--action">
-            <!-- <img class="cell__action__icon" src="./static/icons/menu.svg" id="action__input_1" alt="menu" /> -->
-            <i class="fas fa-bars cell__action__icon" id="action__input_1"></i>
-            <!-- menu -->
-            <div class="action__menu hidden" role="dialog" aria-modal="true" aria-labelledby="action__input_1"
-              id="action__menu_1">
-              <menu class="menu__body">
-                <menuitem class="menu__item">
-                <!-- <img src="./static/icons/duplicate.svg" class="menu__item__icon" /> -->
-                <i class="far fa-copy menu__item__icon"></i>
-                <span>Duplicate</span>
-                </menuitem>
-                <menuitem class="menu__item">
-                <!-- <img src="./static/icons/edit.svg" class="menu__item__icon" /> -->
-                <i class="far fa-edit menu__item__icon"></i>
-                <span>Edit</span>
-                </menuitem>
-                <menuitem class="menu__item">
-                <!-- <img src="./static/icons/delete.svg" class="menu__item__icon" /> -->
-                <i class="far fa-trash-alt menu__item__icon"></i>
-                <span>Delete</span>
-                </menuitem>
-              </menu>
-            </div>
-          </td>
-        </tr>
+      <tbody class="table__body" id="data-panel">
       </tbody>
     </table>
   </main>
